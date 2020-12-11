@@ -1,0 +1,7 @@
+#folder structure
+
+.idea/
+node_modules/
+dist/
+linters/
+
