@@ -1,9 +1,9 @@
 # Basic React Webpack
-#### for development mode only **based on webpack 4+**
+#### for development mode only - **based on webpack 4+**
 
 
 
-##package installed
+## package installed
 * `@babel/core`  *babel transpiler*
 * `@babel/plugin-proposal-class-properties` *trasnformer static class*
 * `@babel/preset-env` *babel environment*
@@ -23,11 +23,13 @@
 * `webpack-dev-server` *webpack server*
 * `react` *react package*    
 * `react-dom` *render React DOM*    
-* `react-hot-loader` *render in realtime also the change of state*
+* `prop-types` *checktyping for props variable*
 
-##Changelog
+## Changelog
 
-...no changes at the moment
+* 1.1 added props-type
+
+
 
 <details><summary><b>Planned</b></summary>
 <ul>
