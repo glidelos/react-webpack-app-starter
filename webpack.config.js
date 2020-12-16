@@ -2,17 +2,28 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const SassLintPlugin = require('sass-lint-webpack')
+const webpack = require('webpack')
 module.exports = {
   mode:'development',
-  entry: './src/index.js',
+  entry: [
+    'react-hot-loader/patch',
+    './src/index.jsx',
+  ],
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: './'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist/'),
-    port:8080
+      contentBase: path.join(__dirname, 'dist/'),
+      port:8080,
+      hot:true,
+      open:true,
+  },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
   module: {
     rules: [
@@ -52,5 +63,6 @@ module.exports = {
       title:'React Start'
     }),
     new SassLintPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ]
 }

@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; }
+
+abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp { hyphens: none; }
+
+html {
+    padding: 2em;
+
+    font: normal 18px/1.25 Source Sans Pro, sans-serif;
+    color: #000;
+    hyphens: auto;
+    word-wrap: break-word;
+
+    background: #fff;
+}
+h1 {
+    color: #f00
+}

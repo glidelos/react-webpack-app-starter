@@ -1,7 +1,8 @@
-# Basic React Webpack
-#### for development mode only - **based on webpack 4+**
+# REWEBAK <sub><sup><sub><sup>*` Basic React Webpack! `*</sup></sub></sup></sub>
 
-
+##### for development mode only - *based on webpack 4+*
+<br>
+<br>
 
 ## package installed
 * `@babel/core`  *babel transpiler*
@@ -24,11 +25,21 @@
 * `react` *react package*    
 * `react-dom` *render React DOM*    
 * `prop-types` *checktyping for props variable*
+* `react-hot-loader` *upgrade component without refreshing browser page*
+* `@hot-loader/babel` *in addition to react-hot -loader, allows to use the hooks*
 
 ## Changelog
 
 * 1.1 added props-type
-
+* 1.2:
+   -    added hot-loader module and fix webpack-cli
+   -    fixed scripts *START* in according to webpack-cli 4.20
+   -    enable hot state in webpack.config
+   -    added HotModuleReplacementPlugin like new instance in plugin
+   -    added export default patch in entry item on webpack.config
+   -    added hot-loader plugin in .babelrc 
+   -    added resolve alias for update state with hooks
+   -    fixed publicPath 
 
 
 <details><summary><b>Planned</b></summary>
@@ -37,4 +48,3 @@
 * convert for webpack 5
 </ul>
 </details>
-                                                                        

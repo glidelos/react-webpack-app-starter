@@ -4,4 +4,5 @@
 node_modules/
 dist/
 linters/
+package-lock.json
 
